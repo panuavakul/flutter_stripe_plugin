@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_stripe_plugin/flutter_stripe_plugin.dart';
+// import 'package:flutter_stripe_plugin/flutter_stripe_plugin.dart';
 
 void main() {
   const MethodChannel channel = MethodChannel('flutter_stripe_plugin');
@@ -13,9 +13,5 @@ void main() {
 
   tearDown(() {
     channel.setMockMethodCallHandler(null);
-  });
-
-  test('getPlatformVersion', () async {
-    expect(await FlutterStripePlugin.platformVersion, '42');
   });
 }
